@@ -19,7 +19,7 @@ import base64
 # }}
 # </style>
 # """, unsafe_allow_html=True)
-st.set_page_config(layout="centered")
+st.set_page_config(layout="wide")
 
 # ------------------ LOAD CSS ------------------
 def load_css():
