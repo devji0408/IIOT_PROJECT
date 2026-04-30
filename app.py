@@ -6,19 +6,19 @@ import numpy as np
 import pandas as pd
 import base64
 
-with open("assets/logos/ab.jpeg", "rb") as f:
-    data = base64.b64encode(f.read()).decode()
+# with open("assets/logos/ab.jpeg", "rb") as f:
+#     data = base64.b64encode(f.read()).decode()
 
-st.markdown(f"""
-<style>
-.stApp {{
-    background-image: url("data:image/jpg;base64,{data}");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}}
-</style>
-""", unsafe_allow_html=True)
+# st.markdown(f"""
+# <style>
+# .stApp {{
+#     background-image: url("data:image/jpg;base64,{data}");
+#     background-size: cover;
+#     background-position: center;
+#     background-attachment: fixed;
+# }}
+# </style>
+# """, unsafe_allow_html=True)
 st.set_page_config(layout="wide")
 
 # ------------------ LOAD CSS ------------------
