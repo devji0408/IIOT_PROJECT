@@ -1,0 +1,177 @@
+/* ---------------- PAGE CONFIG FIX ---------------- */
+section.main > div {
+    max-width: 100% !important;
+    padding-top: 0.5rem !important;
+}
+
+.main {
+    max-width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+---------------- BACKGROUND ---------------- */
+ .stApp {
+    background: url("LOGO.PNG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* DARK OVERLAY */
+.stApp::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+/* ---------------- NAVBAR FINAL ---------------- */
+div[data-baseweb="radio"] {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+
+/* FLEX CONTROL */
+div[role="radiogroup"] {
+    display: flex !important;
+    justify-content: flex-start !important;   /* LEFT ALIGN */
+    align-items: center;
+    gap: 75px;                                /* GAP BETWEEN TABS */
+    flex-wrap: nowrap !important;              /* NO LINE BREAK */
+    overflow-x: auto;                          /* SCROLL IF OVERFLOW */
+    padding-left: 10px;
+}
+
+/* HIDE SCROLLBAR */
+div[role="radiogroup"]::-webkit-scrollbar {
+    display: none;
+}
+
+/* TAB BUTTON */
+div[role="radiogroup"] label {
+    flex: 0 0 auto;                            /* IMPORTANT */
+    padding: 10px 18px;
+    white-space: nowrap;
+    background: rgba(15, 23, 42, 0.85);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+div[role="radiogroup"] label:hover {
+    background: #1e88e5;
+    transform: scale(1.05);
+}
+
+/* ACTIVE TAB */
+div[role="radiogroup"] input:checked + div {
+    color: black !important;
+}
+
+/* ---------------- TEXT ---------------- */
+body {
+    color: #f8fafc;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------- TITLE ---------------- */
+h1 {
+    text-align: center;
+    color: #facc15;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #facc15; }
+    to { text-shadow: 0 0 30px #f97316, 0 0 40px #facc15; }
+}
+
+/* ---------------- CARD ---------------- */
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(14px);
+    padding: 20px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.9);
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* ---------------- BUTTON ---------------- */
+.stButton>button {
+    width: 100%;
+    background: linear-gradient(90deg, #facc15, #f97316);
+    color: black;
+    border-radius: 12px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.stButton>button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #facc15;
+}
+
+/* ---------------- SELECT BOX ---------------- */
+div[data-baseweb="select"] {
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 10px;
+}
+
+/* ---------------- LABEL ---------------- */
+label {
+    color: #e5e7eb !important;
+}
+
+/* ---------------- HEADINGS ---------------- */
+h2, h3 {
+    color: #38bdf8;
+}
+
+/* ---------------- IMAGES ---------------- */
+img {
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* ---------------- CHART ---------------- */
+canvas {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #facc15;
+    border-radius: 10px;
+}

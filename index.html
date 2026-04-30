@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <span>Indian Premier League Match Prediction</span>
+    <span class="user-name">IPL 2026</span>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <div class="logo">IPL<br><span>2026</span></div>
+
+    <div class="nav">
+        <button>Gallery</button>
+        <button>Player Stats</button>
+        <button>Schedule</button>
+        <button>Champions</button>
+        <button>Orange Cap</button>
+        <button>Purple Cap</button>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div onclick="showPage('home')" class="active">Home</div>
+        <div onclick="showPage('prediction')">Prediction</div>
+        <div onclick="showPage('comparison')">Comparison</div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <div id="home" class="page">
+            <img src="https://wallpaperaccess.com/full/9309805.jpg" class="banner">
+        </div>
+
+        <div id="prediction" class="page" style="display:none;">
+            <h2>Match Prediction 🔮</h2>
+            <p>Yaha tum ML model ka output dikha sakte ho</p>
+        </div>
+
+        <div id="comparison" class="page" style="display:none;">
+            <h2>Team Comparison ⚔️</h2>
+            <p>Yaha stats comparison dikhega</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function showPage(pageId) {
+
+    // hide all pages
+    document.querySelectorAll(".page").forEach(p => {
+        p.style.display = "none";
+    });
+
+    // show selected
+    document.getElementById(pageId).style.display = "block";
+
+    // active highlight
+    document.querySelectorAll(".sidebar div").forEach(item=>{
+        item.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>
