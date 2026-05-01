@@ -315,7 +315,7 @@ elif menu == "🏆 Champions":
         ("2022","Jos Buttler"),
         ("2023","Shubman Gill"),
         ("2024","Virat Kohli"),
-        ("2025","Shubhman Gill")
+        ("2025","Dev")
     ]
 
     for y,p in orange_cap:
