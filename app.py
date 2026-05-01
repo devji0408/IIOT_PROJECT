@@ -314,8 +314,13 @@ elif menu == "🏆 Champions":
         ("2021","Ruturaj Gaikwad"),
         ("2022","Jos Buttler"),
         ("2023","Shubman Gill"),
+<<<<<<< HEAD
         ("2024","Virat Kohli"),
         ("2025","Dev")
+=======
+        ("2024","Panchdev Maddheshiya"),
+        ("2025","Pranshu Singh")
+>>>>>>> 128b879974d8d7b65dad61d1c40fd41f4c01016e
     ]
 
     for y,p in orange_cap:
@@ -343,7 +348,11 @@ elif menu == "🏆 Champions":
         ("2022","Yuzvendra Chahal"),
         ("2023","Mohammed Shami"),
         ("2024","Harshal Patel"),
+<<<<<<< HEAD
         ("2025","Prasidh Krishna")
+=======
+        ("2025","Divyanshu Singh")
+>>>>>>> 128b879974d8d7b65dad61d1c40fd41f4c01016e
     ]
 
     for y,p in purple_cap:
