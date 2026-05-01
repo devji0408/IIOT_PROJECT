@@ -343,7 +343,7 @@ elif menu == "🏆 Champions":
         ("2022","Yuzvendra Chahal"),
         ("2023","Mohammed Shami"),
         ("2024","Harshal Patel"),
-        ("2025","Jasprit Bumrah")
+        ("2025","Prasidh Krishna")
     ]
 
     for y,p in purple_cap:
